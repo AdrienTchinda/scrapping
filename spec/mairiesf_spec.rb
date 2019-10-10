@@ -1,11 +1,8 @@
 
-require '../lib/mairiesf.rb'
+require '../lib/mairie.rb'
 
-
-describe "#mairie" do
-
-    it "return a hash" do
-      expect(parsed_city).to be_an_instance_of(Array)
-    end
-
+describe "mairies" do
+  it "should return hash" do
+    expect(email).not_to be_nil
+  end
 end

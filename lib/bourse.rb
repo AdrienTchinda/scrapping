@@ -1,7 +1,6 @@
 require "nokogiri"
 require "open-uri"
 
-
 	page = Nokogiri::HTML(open("https://coinmarketcap.com/all/views/all/"))
 	all_prices_links = page.xpath('//a[@class="price"]')
 

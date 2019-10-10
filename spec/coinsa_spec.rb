@@ -1,11 +1,8 @@
 
-require '../lib/coinsa.rb'
+require '../lib/bourse.rb'
 
-
-describe "#coins" do
-
-    it "return an array" do
-      expect(coins).to be_an_instance_of(Array)
-    end
-
+describe "bourse" do
+  it "should return a tab of hashes" do
+    expect(tableau).not_to be_nil
+  end
 end

@@ -1,8 +1,6 @@
 require "nokogiri"
 require "open-uri"
 
-def mairie
-
 			pageb = Nokogiri::HTML(open("https://www.annuaire-des-mairies.com/val-d-oise.html"))
 			all_emailsb_links = pageb.xpath('//a[@class="lientxt"]')
 
@@ -32,8 +30,6 @@ def mairie
 			end
 
 
-		    parsed_city = Hash[names.zip emailsa]
+		    email = Hash[names.zip emailsa]
 
-	print parsed_city
-
-end
+	print email
